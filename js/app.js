@@ -4341,6 +4341,20 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".feedback__slider")) new core(".feedback__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 2.3,
+                spaceBetween: 32,
+                autoHeight: false,
+                speed: 800,
+                navigation: {
+                    prevEl: ".feedback__button_left",
+                    nextEl: ".feedback__button_right"
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
