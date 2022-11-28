@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221128003313">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221129012628">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,11 +22,11 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Explore</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Travel</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".main-block" href="" class="menu__link">Home</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".destinations" href="" class="menu__link">Explore</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".gallery" href="" class="menu__link">Travel</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".blog" href="" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".offer" href="" class="menu__link">Pricing</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -61,17 +61,18 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="form-footer-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__text">
+					Thanks for filling up the form!
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20221128003313"></script>
+
+	<script src="js/app.min.js?_v=20221129012628"></script>
 </body>
 
 </html>
