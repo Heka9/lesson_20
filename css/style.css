@@ -243,6 +243,7 @@ h6 {
 }
 
 .select__value {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,8 +299,16 @@ h6 {
 }
 
 .select__value._select-pseudo-label::after {
+  font-family: "Rubik";
+  font-size: 1rem;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  color: #767E86;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 0.75rem;
   content: attr(data-pseudo-label);
-  opacity: 0.5;
 }
 
 .select__text {
@@ -1344,6 +1353,11 @@ body::after {
   color: #767E86;
 }
 
+.form__label_select {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .form__input {
   width: 100%;
   font-family: "Playfair Display";
@@ -1430,7 +1444,6 @@ body::after {
 
 .data-input-in {
   padding-right: 1.5rem;
-  height: 37px;
   width: 100%;
   font-family: "Playfair Display";
   height: 2.3125rem;
@@ -1439,7 +1452,6 @@ body::after {
 
 .data-input-out {
   padding-right: 1.5rem;
-  height: 37px;
   width: 100%;
   font-family: "Playfair Display";
   height: 2.3125rem;
@@ -3476,12 +3488,72 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.25rem;
   }
 
+  .form__input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .form__input::-moz-placeholder {
+    font-size: 1rem;
+  }
+
+  .form__input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .form__input::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .form__input::placeholder {
+    font-size: 1rem;
+  }
+
   .data-input-in {
     font-size: 1.25rem;
   }
 
+  .data-input-in::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-in::-moz-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-in:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-in::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-in::placeholder {
+    font-size: 1rem;
+  }
+
   .data-input-out {
     font-size: 1.25rem;
+  }
+
+  .data-input-out::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-out::-moz-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-out:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-out::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .data-input-out::placeholder {
+    font-size: 1rem;
   }
 
   .destinations {
@@ -3736,12 +3808,72 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 0.875rem;
   }
 
+  .form__input::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .form__input::-moz-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .form__input:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .form__input::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .form__input::placeholder {
+    font-size: 0.75rem;
+  }
+
   .data-input-in {
     font-size: 0.875rem;
   }
 
+  .data-input-in::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-in::-moz-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-in:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-in::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-in::placeholder {
+    font-size: 0.75rem;
+  }
+
   .data-input-out {
     font-size: 0.875rem;
+  }
+
+  .data-input-out::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-out::-moz-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-out:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-out::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+
+  .data-input-out::placeholder {
+    font-size: 0.75rem;
   }
 
   .slide-destination__title {
@@ -4415,6 +4547,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+@supports (font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem )) {
+    .form__input::-webkit-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .form__input::-moz-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .form__input:-ms-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .form__input::-ms-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .form__input::placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem )) {
+    .form__input::-webkit-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .form__input::-moz-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .form__input:-ms-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .form__input::-ms-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .form__input::placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+}
+
 @supports (font-size: clamp( 0.875rem , 0.7678571429rem  +  0.5357142857vw , 1.25rem )) {
     .data-input-in {
       font-size: clamp( 0.875rem , 0.7678571429rem  +  0.5357142857vw , 1.25rem );
@@ -4427,6 +4595,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+@supports (font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem )) {
+    .data-input-in::-webkit-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-in::-moz-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-in:-ms-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-in::-ms-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-in::placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem )) {
+    .data-input-in::-webkit-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-in::-moz-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-in:-ms-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-in::-ms-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-in::placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+}
+
 @supports (font-size: clamp( 0.875rem , 0.7678571429rem  +  0.5357142857vw , 1.25rem )) {
     .data-input-out {
       font-size: clamp( 0.875rem , 0.7678571429rem  +  0.5357142857vw , 1.25rem );
@@ -4436,6 +4640,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 0.875rem , 0.7678571429rem  +  0.5357142857vw , 1.25rem )) {
     .data-input-out {
       font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 70);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem )) {
+    .data-input-out::-webkit-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-out::-moz-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-out:-ms-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-out::-ms-input-placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+    .data-input-out::placeholder {
+      font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6785714286rem  +  0.3571428571vw , 1rem )) {
+    .data-input-out::-webkit-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-out::-moz-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-out:-ms-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-out::-ms-input-placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
+    }
+    .data-input-out::placeholder {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70);
     }
 }
 
