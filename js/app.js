@@ -5199,7 +5199,7 @@
                 speed: 800,
                 breakpoints: {
                     320: {
-                        slidesPerView: 1.2,
+                        slidesPerView: 1.1,
                         spaceBetween: 20
                     },
                     768: {
