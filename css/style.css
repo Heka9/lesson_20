@@ -1517,6 +1517,7 @@ body::after {
 
 .destinations__button.swiper-button-disabled {
   background-color: #172432;
+  cursor: default;
 }
 
 .destinations__button_left {
@@ -1708,6 +1709,7 @@ body::after {
 
 .offer__button.swiper-button-disabled {
   background-color: #172432;
+  cursor: default;
 }
 
 .offer__button_left {
@@ -2208,6 +2210,7 @@ body::after {
 
 .gallery__button.swiper-button-disabled {
   background-color: #172432;
+  cursor: default;
 }
 
 .gallery__button_left {
@@ -2359,6 +2362,7 @@ body::after {
 
 .feedback__button.swiper-button-disabled {
   background-color: #172432;
+  cursor: default;
 }
 
 .feedback__button_left {
