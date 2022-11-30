@@ -7503,16 +7503,6 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const da = new DynamicAdapt("max");
         da.init();
-        const calendarLabelIn = document.querySelector(".data-input-in");
-        const calendarLabelOut = document.querySelector(".data-input-out");
-        const parentIconIn = document.querySelector(".form__data_in");
-        const parentIconOut = document.querySelector(".form__data_out");
-        document.addEventListener("click", (function(e) {
-            let targetElement = e.target;
-            console.log(targetElement);
-            if (targetElement === calendarLabelIn || parentIconIn) parentIconIn.classList.toggle("_form__data-open");
-            if (targetElement === calendarLabelOut || parentIconOut) parentIconOut.classList.toggle("_form__data-open");
-        }));
         window["FLS"] = true;
         isWebp();
         addTouchClass();
