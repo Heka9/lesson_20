@@ -1293,6 +1293,10 @@ body::after {
           align-items: center;
 }
 
+.main-block__inner {
+  padding-bottom: 3.125rem;
+}
+
 .main-block__title {
   font-family: "Playfair Display";
   line-height: 1.3333333333;
@@ -1879,6 +1883,7 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 3.125rem;
 }
 
 .blog__title .title-block__main::before {
@@ -1992,6 +1997,7 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 
 .trip__content {
@@ -2184,6 +2190,7 @@ body::after {
 
 .gallery__inner {
   min-width: 0;
+  padding-bottom: 3.125rem;
 }
 
 .gallery__header {
