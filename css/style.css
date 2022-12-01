@@ -1142,6 +1142,10 @@ body::after {
           flex-direction: row;
 }
 
+.title-footer_left::before {
+  display: none;
+}
+
 .link-footer {
   font-size: 1.125rem;
   line-height: 1.1666666667;
