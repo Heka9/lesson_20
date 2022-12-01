@@ -4521,6 +4521,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .footer {
     padding-bottom: 1.875rem;
   }
+
+  .content-footer__socials {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 20em) and (max-width: 90em) {
