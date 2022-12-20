@@ -2051,10 +2051,10 @@ body::after {
   position: absolute;
   z-index: 2;
   background-color: #fff;
-  top: -100px;
+  top: -150px;
   left: -300%;
   width: 300%;
-  height: calc(100% + 200px);
+  height: calc(100% + 300px);
 }
 
 .slide-trip {
